@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:text="A driven mobile developer with solid experience in creating native application such as iOS, Windows, and Android who aims to share his ideas in the field of Information Technology - to transform complexity to simplicity." />
+                android:text="A driven mobile developer with a solid experience in creating native application, such as iOS, Windows, and Android. He aims to share his ideas in the field of Information Technology through transforming complexity to simplicity." />
 
             <TextView
                 android:layout_width="match_parent"
