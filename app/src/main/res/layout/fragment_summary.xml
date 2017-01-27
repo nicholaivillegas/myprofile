@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v7.widget.CardView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:cardCornerRadius="15dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linear_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
             android:orientation="vertical">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/my_image" />
 
-
-                <ImageView
-                    android:id="@+id/image_profile"
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:layout_marginBottom="10dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/my_image" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/image_profile"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginBottom="5dp"
-                    android:gravity="center"
-                    android:text="Nico Villegas"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp" />
-
-            </RelativeLayout>
-
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginTop="10dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Nico Villegas"
+                android:textSize="45sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="A driven mobile developer with solid experience in creating native application such as iOS, Windows, and Android who aims to share his ideas in the field of Information Technology - to transform complexity to simplicity." />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="Excellent Communication skills in English and Filipino. Understands basic German and Dutch" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingEnd="25dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingStart="25dp"
+                android:text="A driven mobile developer with solid experience in creating native application such as iOS, Windows, and Android who aims to share his ideas in the field of Information Technology - to transform complexity to simplicity." />
 
-            </LinearLayout>
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Excellent Communication skills in English and Filipino. Understands basic German and Dutch" />-->
+
+
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </ScrollView>
 
-</LinearLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/text_footer"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="VILLEGAS | 2017" />-->
+
+</RelativeLayout>

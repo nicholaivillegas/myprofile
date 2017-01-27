@@ -13,5 +13,47 @@
     tools:context="com.resume.nico.myresume.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+    <LinearLayout
+        android:id="@+id/linear_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/my_image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Nico Villegas"
+            android:textSize="45sp" />
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingEnd="25dp"-->
+            <!--android:paddingLeft="25dp"-->
+            <!--android:paddingRight="25dp"-->
+            <!--android:paddingStart="25dp"-->
+            <!--android:text="A driven mobile developer with solid experience in creating native application such as iOS, Windows, and Android who aims to share his ideas in the field of Information Technology - to transform complexity to simplicity." />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Excellent Communication skills in English and Filipino. Understands basic German and Dutch" />-->
+
+
+    </LinearLayout>
 
 </RelativeLayout>
