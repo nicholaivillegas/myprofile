@@ -14,7 +14,11 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingEnd="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingStart="25dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="250dp"
@@ -37,19 +41,65 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:paddingEnd="25dp"
-                android:paddingLeft="25dp"
-                android:paddingRight="25dp"
-                android:paddingStart="25dp"
                 android:text="A driven mobile developer with solid experience in creating native application such as iOS, Windows, and Android who aims to share his ideas in the field of Information Technology - to transform complexity to simplicity." />
 
-            <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="5dp"-->
-            <!--android:gravity="center"-->
-            <!--android:text="Excellent Communication skills in English and Filipino. Understands basic German and Dutch" />-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Excellent Communication skills in English and Filipino. Understands basic German and Dutch" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_email_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_email_black_18dp"
+                android:text="nicholaivillegas@gmail.com"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_phone_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_phone_black_18dp"
+                android:text="+639054559070"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_cake_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_cake_black_18dp"
+                android:text="March 14, 1995"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_location_on_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_location_on_black_18dp"
+                android:text="Quezon City, Philippines"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_public_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_public_black_18dp"
+                android:text="www.linkedin.com/in/johnnicholai"
+                android:textSize="18sp" />
 
         </LinearLayout>
     </ScrollView>

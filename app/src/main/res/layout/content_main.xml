@@ -17,6 +17,7 @@
         android:id="@+id/linear_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:alpha=".3"
         android:background="@android:color/white"
         android:gravity="center"
         android:orientation="vertical">
@@ -36,15 +37,15 @@
             android:textSize="45sp" />
 
         <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="15dp"-->
-            <!--android:gravity="center"-->
-            <!--android:paddingEnd="25dp"-->
-            <!--android:paddingLeft="25dp"-->
-            <!--android:paddingRight="25dp"-->
-            <!--android:paddingStart="25dp"-->
-            <!--android:text="A driven mobile developer with solid experience in creating native application such as iOS, Windows, and Android who aims to share his ideas in the field of Information Technology - to transform complexity to simplicity." />-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingEnd="25dp"-->
+        <!--android:paddingLeft="25dp"-->
+        <!--android:paddingRight="25dp"-->
+        <!--android:paddingStart="25dp"-->
+        <!--android:text="A driven mobile developer with solid experience in creating native application such as iOS, Windows, and Android who aims to share his ideas in the field of Information Technology - to transform complexity to simplicity." />-->
 
         <!--<TextView-->
         <!--android:layout_width="match_parent"-->
