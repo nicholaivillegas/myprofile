@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -14,53 +15,486 @@
             android:layout_height="wrap_content"
             android:background="#99ffffff"
             android:gravity="center"
-            android:orientation="vertical"
-            android:paddingEnd="25dp"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:paddingStart="25dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:drawableLeft="@drawable/ic_work_black_18dp"
-                android:drawablePadding="10dp"
-                android:drawableStart="@drawable/ic_work_black_18dp"
-                android:text="Company"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:drawableLeft="@drawable/ic_label_black_18dp"
-                android:drawablePadding="10dp"
-                android:drawableStart="@drawable/ic_label_black_18dp"
-                android:text="E.Care Assessment Tool"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:drawableLeft="@drawable/ic_date_range_black_18dp"
-                android:drawablePadding="10dp"
-                android:drawableStart="@drawable/ic_date_range_black_18dp"
-                android:text="Feb 2015 - May 2015"
-                android:textSize="18sp" />
+            android:orientation="vertical">
 
             <!--<TextView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginTop="1dp"-->
-                <!--android:drawableLeft="@drawable/ic_person_black_18dp"-->
-                <!--android:drawablePadding="10dp"-->
-                <!--android:drawableStart="@drawable/ic_person_black_18dp"-->
-                <!--android:text="Personal"-->
-                <!--android:textSize="18sp"-->
-                <!--android:textStyle="bold" />-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:drawableLeft="@drawable/ic_work_black_18dp"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:drawableStart="@drawable/ic_work_black_18dp"-->
+            <!--android:text="Company"-->
+            <!--android:textSize="24sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_ecare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_label_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_label_black_18dp"
+                        android:text="E.Care Assessment Tool"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="Feb 2015 - May 2015"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:text="E.care creates, sells and implements software that supports the medical care process in hospitals, more specifically in the emergency ward and the operating room."
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_ecare"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_transparent_selector"
+                        android:text="See more" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_emcat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_label_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_label_black_18dp"
+                        android:text="EMCAT (EM10)"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="Jul 2015 - May 2016"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:text="EM10 is business-oriented payment device integrated with MSR (Magnetic Stripe Readers), IC Card Readers, NFC Reader / Writer as standard equipment. The application is based on a Windows 8.1 Store app backed by ASP.NET and Windows Azure Cloud Services on the server side backend."
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_emcat"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_transparent_selector"
+                        android:text="See more" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_empos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_label_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_label_black_18dp"
+                        android:text="EMPOS (EM10)"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="Jul 2015 - May 2016"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:text="Users can see the status of bookings, sales, store traffic, and a ranking of sales/product/customer on the startup screen, so managers and/or administrators understand various database, all at once."
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_empos"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_transparent_selector"
+                        android:text="See more" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_shutapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_label_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_label_black_18dp"
+                        android:text="ShutApp Android Security and Power Saving App"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="May 2014 - Dec 2014"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:text="ShutApp Application focuses on the security of the users. It showed how an application can help users secure, not just their files, but their gadgets as well. "
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_shutapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_transparent_selector"
+                        android:text="See more" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_tagcash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_label_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_label_black_18dp"
+                        android:text="Tagcash Wallet App (formerly Miskio)"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="May 2016 - Present"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:text="Tagcash Wallet enables cashless transactions between users and merchants, with other features dependent on which country you are in. Merchants can create their own currency for use in rewards, or in house transactions, or in certain countries, real money is also available."
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_tagcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_transparent_selector"
+                        android:text="See more" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_gofer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_label_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_label_black_18dp"
+                        android:text="Gofer Bike App"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="May 2016 - Present"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:text="Gofer Ph is an online delivery site with a passion for fast deliveries and saving the planet. With a bike and an eco-friendly mindset, Gofer PH is eager in making this world a better and cleaner place."
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_gofer"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_transparent_selector"
+                        android:text="See more" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_tag77"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_label_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_label_black_18dp"
+                        android:text="Tag77 App"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="Sep 2016 - Present"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:text="Create, buy or sell tickets to events, clubs and more; apps to track digital tickets and add credits to reusable wristbands for spending during the event."
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_tag77"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_transparent_selector"
+                        android:text="See more" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_taxph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_label_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_label_black_18dp"
+                        android:text="TaxPh"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="Sep 2016 - Present"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:text="From your monthly salary, how much do you actually take home?
+
+TaxPh is an app that calculates your Net Salary. It takes into consideration the monthly payment of income tax and other deductions, such as contributions to SSS, Pag-IBIG, and PhilHealth.
+It is very informative and helpful; new hires can easily budget ahead of time, fresh graduates can use it when picking out their first job, and promoted employees can compare their current and previous pay.
+With just a few taps, you'll know where your money will go and how much you will take home.
+
+So what are you waiting for? Download now!"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_taxph"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_transparent_selector"
+                        android:text="See more" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_trainsph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_label_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_label_black_18dp"
+                        android:text="TrainsPh"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="Sep 2016 - Present"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:text="TrainsPh
+Project descriptionMake commuting easier with TrainsPh! It lessens the aggravation of every commuter as the app offers features that answer their troubles! TrainsPh provides CCTV access to all stations of the MRT3 Philippines and updates on the latest train status. People will get to see if the train is already arriving, know what station they are at, check if the passengers are already piling up, and find out how many trains are currently working."
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_trainsph"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_transparent_selector"
+                        android:text="See more" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:drawableLeft="@drawable/ic_person_black_18dp"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:drawableStart="@drawable/ic_person_black_18dp"-->
+            <!--android:text="Personal"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textStyle="bold" />-->
 
         </LinearLayout>
 

@@ -1,11 +1,392 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Achievement"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_grade_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_grade_black_18dp"
+                        android:text="Magna Cum Laude"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_school_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_school_black_18dp"
+                        android:text="Informatics International College" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="June 2015" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_grade_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_grade_black_18dp"
+                        android:text="Best in Programming"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_school_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_school_black_18dp"
+                        android:text="Informatics International College" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="June 2015" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_grade_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_grade_black_18dp"
+                        android:text="Dean's Lister"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_school_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_school_black_18dp"
+                        android:text="Informatics International College" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="May 2012 - May 2015" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_grade_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_grade_black_18dp"
+                        android:text="Leadership Award"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_school_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_school_black_18dp"
+                        android:text="Informatics International College" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="June 2015" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_grade_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_grade_black_18dp"
+                        android:text="Leadership Award"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_school_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_school_black_18dp"
+                        android:text="Colegio De San Lorenzo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="March 2012" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_grade_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_grade_black_18dp"
+                        android:text="I.T Project Management"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_school_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_school_black_18dp"
+                        android:text="Gates Professional Schools" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="May 2014" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_grade_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_grade_black_18dp"
+                        android:text="Beginner's German Language Program"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_school_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_school_black_18dp"
+                        android:text="Le Premier Language" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="Feb 2016" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_grade_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_grade_black_18dp"
+                        android:text="IPV6 Newbie"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_school_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_school_black_18dp"
+                        android:text="Experts Academy" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="July 2013" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:drawableLeft="@drawable/ic_grade_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_grade_black_18dp"
+                        android:text="IP Fundamentals"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_school_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_school_black_18dp"
+                        android:text="Experts Academy" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_date_range_black_18dp"
+                        android:text="July 2013" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
