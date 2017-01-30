@@ -41,8 +41,13 @@
                 android:title="Share" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_email_black_18dp"
                 android:title="Send" />
+
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/ic_phone_black_18dp"
+                android:title="Call" />
         </menu>
     </item>
 

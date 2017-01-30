@@ -1,5 +1,7 @@
 package com.resume.nico.myresume;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -14,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -108,8 +111,27 @@ public class MainActivity extends AppCompatActivity
             switchFragment(new SkillFragment());
             toolbar.setTitle("Skills");
         } else if (id == R.id.nav_share) {
-
+            Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            String shareBody = "HeY! You should check John Nicholai's Profile here : https://www.linkedin.com/in/johnnicholai/";
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "John Nicholai Villegas");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+            startActivity(Intent.createChooser(sharingIntent, "Share via"));
         } else if (id == R.id.nav_send) {
+            Intent i = new Intent(Intent.ACTION_SEND);
+            i.setType("message/rfc822");
+            i.putExtra(Intent.EXTRA_EMAIL, new String[]{"nicholaivillegas@gmail.com"});
+            i.putExtra(Intent.EXTRA_SUBJECT, "From My Resume App");
+            i.putExtra(Intent.EXTRA_TEXT, "Hi! I just have read your Resume App.");
+            try {
+                startActivity(Intent.createChooser(i, "Send mail..."));
+            } catch (android.content.ActivityNotFoundException ex) {
+                Toast.makeText(this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+            }
+        } else if (id == R.id.nav_call) {
+            Intent i = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "09054559070"));
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
