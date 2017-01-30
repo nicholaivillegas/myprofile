@@ -18,11 +18,13 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-//            super.onBackPressed();
+            super.onBackPressed();
         }
     }
 
@@ -86,18 +88,25 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_summary) {
             switchFragment(new SummaryFragment());
+            toolbar.setTitle("Summary");
         } else if (id == R.id.nav_education) {
             switchFragment(new EducationFragment());
+            toolbar.setTitle("Education");
         } else if (id == R.id.nav_experience) {
             switchFragment(new ExperienceFragment());
+            toolbar.setTitle("Experience");
         } else if (id == R.id.nav_project) {
             switchFragment(new ProjectFragment());
+            toolbar.setTitle("Projects");
         } else if (id == R.id.nav_achievement) {
             switchFragment(new AchievementFragment());
+            toolbar.setTitle("Achievements");
         } else if (id == R.id.nav_organization) {
             switchFragment(new OrganizationFragment());
+            toolbar.setTitle("Organizations");
         } else if (id == R.id.nav_skill) {
             switchFragment(new SkillFragment());
+            toolbar.setTitle("Skills");
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

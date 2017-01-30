@@ -1,11 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Education"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:id="@+id/linear_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingEnd="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingStart="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/ic_school_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_school_black_18dp"
+                android:text="Shaw Academy"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_label_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_label_black_18dp"
+                android:text="Diploma in Mobile App Development, Information Technology." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_grade_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_grade_black_18dp"
+                android:text="96%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_grade_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range_black_18dp"
+                android:text="2016" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/ic_school_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_school_black_18dp"
+                android:text="Informatics International College"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_label_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_label_black_18dp"
+                android:text="Bachelor of Science in Information Technology, Information Technology." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_grade_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_grade_black_18dp"
+                android:text="1.314" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_grade_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range_black_18dp"
+                android:text="2015" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/ic_school_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_school_black_18dp"
+                android:text="Shaw Academy"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_label_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_label_black_18dp"
+                android:text="Diploma in Web Development, Information Technology." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_grade_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_grade_black_18dp"
+                android:text="98%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_grade_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range_black_18dp"
+                android:text="2016" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/ic_school_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_school_black_18dp"
+                android:text="Shaw Academy"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_label_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_label_black_18dp"
+                android:text="Diploma in English for Business, English and Literature, General." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_grade_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_grade_black_18dp"
+                android:text="92%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_grade_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range_black_18dp"
+                android:text="2016" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/ic_school_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_school_black_18dp"
+                android:text="Colegio De San Lorenzo"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_label_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_label_black_18dp"
+                android:text="High School Diploma" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_grade_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range_black_18dp"
+                android:text="2012" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

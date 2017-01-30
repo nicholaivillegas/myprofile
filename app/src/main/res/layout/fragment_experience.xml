@@ -1,11 +1,367 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Experience"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:id="@+id/linear_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#99ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingEnd="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingStart="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/ic_work_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_work_black_18dp"
+                android:text="Co-founder"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_label_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_label_black_18dp"
+                android:text="Villegas | Granados App Development" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range_black_18dp"
+                android:text="July 2016 - Present" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_on_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_location_on_black_18dp"
+                android:text="Philippines" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="TrainsPh (Full Application Development)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="TaxPh (Full Application Development)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <!--next-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/ic_work_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_work_black_18dp"
+                android:text="Android Developer"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_label_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_label_black_18dp"
+                android:text="Tagcash Ltd." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range_black_18dp"
+                android:text="May 2016 - Present" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_on_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_location_on_black_18dp"
+                android:text="Philippines" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="Tagcash Wallet App (Native Android App)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="Food Ordering Service Module" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="Request/QR Module" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="SafePay Module" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="Shopping Module" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="Gofer Bike Delivery App (Native Android App)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="Tag77 (Native Android and Hybrid App)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <!--next-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/ic_work_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_work_black_18dp"
+                android:text="Software Engineer"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_label_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_label_black_18dp"
+                android:text="Empathy Co., Ltd." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range_black_18dp"
+                android:text="July 2015 - May 2016" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_on_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_location_on_black_18dp"
+                android:text="Philippines" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="EMCAT" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="EMTaxi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="EMPOS " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="Tax-free Shopping Module " />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <!--next-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/ic_work_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_work_black_18dp"
+                android:text="Software Engineer"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_label_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_label_black_18dp"
+                android:text="E.Care BVBA" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range_black_18dp"
+                android:text="Mar 2015 - May 2015" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_on_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_location_on_black_18dp"
+                android:text="Belgium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_assignment_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_assignment_black_18dp"
+                android:text="E.Care Assessment Tool" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <!--next-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:drawableLeft="@drawable/ic_work_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_work_black_18dp"
+                android:text="I.T Representative"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_label_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_label_black_18dp"
+                android:text="Informatics International College" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_date_range_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_date_range_black_18dp"
+                android:text="Jan 2013 - Dec 2014" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_on_black_18dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_location_on_black_18dp"
+                android:text="Philippines" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
