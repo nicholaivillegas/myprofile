@@ -38,7 +38,8 @@
                         android:drawablePadding="10dp"
                         android:drawableStart="@drawable/ic_work_black_18dp"
                         android:text="Co-founder"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -109,8 +110,10 @@
                         android:drawableLeft="@drawable/ic_work_black_18dp"
                         android:drawablePadding="10dp"
                         android:drawableStart="@drawable/ic_work_black_18dp"
+
                         android:text="Android Developer"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -230,7 +233,8 @@
                         android:drawablePadding="10dp"
                         android:drawableStart="@drawable/ic_work_black_18dp"
                         android:text="Software Engineer"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -324,7 +328,8 @@
                         android:drawablePadding="10dp"
                         android:drawableStart="@drawable/ic_work_black_18dp"
                         android:text="Software Engineer"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -384,7 +389,8 @@
                         android:drawablePadding="10dp"
                         android:drawableStart="@drawable/ic_work_black_18dp"
                         android:text="I.T Representative"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
