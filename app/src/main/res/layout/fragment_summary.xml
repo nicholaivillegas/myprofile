@@ -54,6 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:autoLink="email"
                 android:drawableLeft="@drawable/ic_email_black_18dp"
                 android:drawablePadding="10dp"
                 android:drawableStart="@drawable/ic_email_black_18dp"
@@ -64,6 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:autoLink="phone"
                 android:drawableLeft="@drawable/ic_phone_black_18dp"
                 android:drawablePadding="10dp"
                 android:drawableStart="@drawable/ic_phone_black_18dp"
@@ -84,10 +86,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:autoLink="map"
                 android:drawableLeft="@drawable/ic_location_on_black_18dp"
                 android:drawablePadding="10dp"
                 android:drawableStart="@drawable/ic_location_on_black_18dp"
-                android:text="Quezon City, Philippines"
+                android:text="Metro Manila, Philippines"
                 android:textSize="18sp" />
 
             <TextView
@@ -95,6 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp"
+                android:autoLink="web"
                 android:drawableLeft="@drawable/ic_public_black_18dp"
                 android:drawablePadding="10dp"
                 android:drawableStart="@drawable/ic_public_black_18dp"
