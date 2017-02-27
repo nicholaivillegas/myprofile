@@ -88,11 +88,23 @@
                         android:visibility="gone" />
 
                     <ImageButton
-                        android:layout_width="match_parent"
+                        android:id="@+id/button_expand_more"
+                        android:layout_width="18dp"
                         android:layout_height="18dp"
+                        android:layout_gravity="center"
                         android:background="@drawable/button_transparent_selector"
                         android:src="@drawable/ic_expand_more_black_18dp"
                         android:textColor="@color/colorLight" />
+
+                    <ImageButton
+                        android:id="@+id/button_expand_less"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_transparent_selector"
+                        android:src="@drawable/ic_expand_less_black_18dp"
+                        android:textColor="@color/colorLight"
+                        android:visibility="gone" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
@@ -214,7 +226,27 @@
                             android:drawablePadding="10dp"
                             android:drawableStart="@drawable/ic_assignment_black_18dp"
                             android:text="Shopping Module" />
+
                     </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/button_expand_more2"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_transparent_selector"
+                        android:src="@drawable/ic_expand_more_black_18dp"
+                        android:textColor="@color/colorLight" />
+
+                    <ImageButton
+                        android:id="@+id/button_expand_less2"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_transparent_selector"
+                        android:src="@drawable/ic_expand_less_black_18dp"
+                        android:textColor="@color/colorLight"
+                        android:visibility="gone" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
@@ -308,8 +340,26 @@
                             android:drawablePadding="10dp"
                             android:drawableStart="@drawable/ic_assignment_black_18dp"
                             android:text="Tax-free Shopping Module " />
-
                     </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/button_expand_more3"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_transparent_selector"
+                        android:src="@drawable/ic_expand_more_black_18dp"
+                        android:textColor="@color/colorLight" />
+
+                    <ImageButton
+                        android:id="@+id/button_expand_less3"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_transparent_selector"
+                        android:src="@drawable/ic_expand_less_black_18dp"
+                        android:textColor="@color/colorLight"
+                        android:visibility="gone" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
@@ -372,6 +422,25 @@
                         android:text="E.Care Assessment Tool"
                         android:visibility="gone" />
 
+                    <ImageButton
+                        android:id="@+id/button_expand_more4"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_transparent_selector"
+                        android:src="@drawable/ic_expand_more_black_18dp"
+                        android:textColor="@color/colorLight" />
+
+                    <ImageButton
+                        android:id="@+id/button_expand_less4"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_transparent_selector"
+                        android:src="@drawable/ic_expand_less_black_18dp"
+                        android:textColor="@color/colorLight"
+                        android:visibility="gone" />
+
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <!--next-->
@@ -421,6 +490,7 @@
                         android:drawablePadding="10dp"
                         android:drawableStart="@drawable/ic_location_on_black_18dp"
                         android:text="Philippines" />
+
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>

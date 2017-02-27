@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Description;
@@ -30,22 +30,25 @@ import java.util.List;
 public class SkillFragment extends Fragment {
 
     PieChart mChart;
+    TextView textSkillTitle;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_skill, container, false);
         mChart = (PieChart) view.findViewById(R.id.pie_chart);
+        textSkillTitle = (TextView) view.findViewById(R.id.text_skill_title);
         Description desc = new Description();
         desc.setText("");
 //        desc.setTextSize(20);
         mChart.setDescription(desc);
 
         final List<PieEntry> entries = new ArrayList<>();
-        entries.add(new PieEntry(10f, "Mobile Development", 0));
-        entries.add(new PieEntry(10f, "Web Development", 1));
+        entries.add(new PieEntry(10f, "Language", 0));
+        entries.add(new PieEntry(10f, "App Development", 1));
         entries.add(new PieEntry(10f, "System Analysis", 2));
-        entries.add(new PieEntry(10f, "UI/UX Design", 3));
+        entries.add(new PieEntry(10f, "Professional Skills", 3));
+        entries.add(new PieEntry(10f, "UI/UX Design", 4));
         PieDataSet dataset = new PieDataSet(entries, "");
         dataset.setColors(ColorTemplate.PASTEL_COLORS);
         dataset.setHighlightEnabled(true);
@@ -66,7 +69,20 @@ public class SkillFragment extends Fragment {
             public void onValueSelected(Entry e, Highlight h) {
                 String index = e.getData().toString();
                 String label = entries.get(Integer.parseInt(index)).getLabel();
-                Toast.makeText(getContext(), label, Toast.LENGTH_SHORT).show();
+                textSkillTitle.setText(label);
+
+                switch (label) {
+                    case "App Development":
+                        break;
+                    case "Language":
+                        break;
+                    case "System Analysis":
+                        break;
+                    case "UI/UX Design":
+                        break;
+                    case "Professional Skills":
+                        break;
+                }
 
             }
 
