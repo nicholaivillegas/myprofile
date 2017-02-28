@@ -21,6 +21,8 @@ import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.squareup.picasso.MemoryPolicy;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,23 +35,36 @@ public class SkillFragment extends Fragment {
 
     PieChart mChart;
     TextView textSkillTitle;
-    LinearLayout linearMultimedia, linearProfessional, linearProfessional1, linearProfessional2, linearSystem, linearApp,linearApp1,linearApp2;
-    ImageView imageMaterial;
+    LinearLayout linearFirst, linearSecond, linearThird, linearThird1, linearThird2, linearFourth, linearFifth;
+    ImageView imageMaterial, image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12;
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_skill, container, false);
         mChart = (PieChart) view.findViewById(R.id.pie_chart);
         imageMaterial = (ImageView) view.findViewById(R.id.image_material);
-        linearMultimedia = (LinearLayout) view.findViewById(R.id.linear_multimedia);
-        linearProfessional = (LinearLayout) view.findViewById(R.id.linear_professional);
-        linearProfessional1 = (LinearLayout) view.findViewById(R.id.linear_professional1);
-        linearProfessional2 = (LinearLayout) view.findViewById(R.id.linear_professional2);
-        linearSystem = (LinearLayout) view.findViewById(R.id.linear_system_analysis);
-        linearApp = (LinearLayout) view.findViewById(R.id.linear_app);
-        linearApp1 = (LinearLayout) view.findViewById(R.id.linear_app1);
-        linearApp2 = (LinearLayout) view.findViewById(R.id.linear_app2);
+        image1 = (ImageView) view.findViewById(R.id.image1);
+        image2 = (ImageView) view.findViewById(R.id.image2);
+        image3 = (ImageView) view.findViewById(R.id.image3);
+        image4 = (ImageView) view.findViewById(R.id.image4);
+        image5 = (ImageView) view.findViewById(R.id.image5);
+        image6 = (ImageView) view.findViewById(R.id.image6);
+        image7 = (ImageView) view.findViewById(R.id.image7);
+        image8 = (ImageView) view.findViewById(R.id.image8);
+        image9 = (ImageView) view.findViewById(R.id.image9);
+        image10 = (ImageView) view.findViewById(R.id.image10);
+        image11 = (ImageView) view.findViewById(R.id.image11);
+        image12 = (ImageView) view.findViewById(R.id.image12);
+        imageMaterial = (ImageView) view.findViewById(R.id.image_material);
+        linearFirst = (LinearLayout) view.findViewById(R.id.linear_first);
+        linearSecond = (LinearLayout) view.findViewById(R.id.linear_second);
+        linearThird = (LinearLayout) view.findViewById(R.id.linear_third);
+        linearThird1 = (LinearLayout) view.findViewById(R.id.linear_third1);
+        linearThird2 = (LinearLayout) view.findViewById(R.id.linear_third2);
+        linearFourth = (LinearLayout) view.findViewById(R.id.linear_fourth);
+        linearFifth = (LinearLayout) view.findViewById(R.id.linear_fifth);
+
         textSkillTitle = (TextView) view.findViewById(R.id.text_skill_title);
 
         Description desc = new Description();
@@ -86,47 +101,127 @@ public class SkillFragment extends Fragment {
 
                 switch (label) {
                     case "App Development":
-                        linearMultimedia.setVisibility(View.GONE);
-                        linearSystem.setVisibility(View.GONE);
-                        linearProfessional.setVisibility(View.GONE);
-                        linearProfessional1.setVisibility(View.GONE);
-                        linearProfessional2.setVisibility(View.GONE);
-                        linearApp.setVisibility(View.VISIBLE);
-                        linearApp1.setVisibility(View.VISIBLE);
-                        linearApp2.setVisibility(View.VISIBLE);
+                        linearFirst.setVisibility(View.VISIBLE);
+                        linearSecond.setVisibility(View.VISIBLE);
+//                        linearThird.setVisibility(View.VISIBLE);
+                        linearThird1.setVisibility(View.GONE);
+                        linearThird2.setVisibility(View.GONE);
+                        linearFourth.setVisibility(View.VISIBLE);
+                        linearFifth.setVisibility(View.VISIBLE);
                         imageMaterial.setVisibility(View.GONE);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.android_studio)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image1);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.github)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image2);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.firebase)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image3);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.xamarin)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image4);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.mercurial)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image5);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.visual_studio)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image6);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.windows)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image7);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.phonegap)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image8);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.jquery)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image9);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.sqlite)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image10);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.php_logo)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image11);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.fusetools)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image12);
                         break;
                     case "System Analysis":
-                        linearMultimedia.setVisibility(View.GONE);
-                        linearSystem.setVisibility(View.VISIBLE);
-                        linearProfessional.setVisibility(View.GONE);
-                        linearProfessional1.setVisibility(View.GONE);
-                        linearProfessional2.setVisibility(View.GONE);
-                        linearApp.setVisibility(View.GONE);
-                        linearApp1.setVisibility(View.GONE);
-                        linearApp2.setVisibility(View.GONE);
+                        linearFirst.setVisibility(View.VISIBLE);
+                        linearSecond.setVisibility(View.GONE);
+                        linearThird.setVisibility(View.GONE);
+                        linearThird1.setVisibility(View.GONE);
+                        linearThird2.setVisibility(View.GONE);
+                        linearFourth.setVisibility(View.GONE);
+                        linearFifth.setVisibility(View.GONE);
                         imageMaterial.setVisibility(View.GONE);
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.project)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image1);
+
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.office)
+                                .resize(300, 150).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image2);
+
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.visio)
+                                .resize(200, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image3);
                         break;
                     case "UI/UX Design":
-                        linearMultimedia.setVisibility(View.VISIBLE);
-                        linearSystem.setVisibility(View.GONE);
-                        linearProfessional.setVisibility(View.GONE);
-                        linearProfessional1.setVisibility(View.GONE);
-                        linearProfessional2.setVisibility(View.GONE);
-                        linearApp.setVisibility(View.GONE);
-                        linearApp1.setVisibility(View.GONE);
-                        linearApp2.setVisibility(View.GONE);
+
+                        linearFirst.setVisibility(View.VISIBLE);
+                        linearSecond.setVisibility(View.GONE);
+                        linearThird.setVisibility(View.GONE);
+                        linearThird1.setVisibility(View.GONE);
+                        linearThird2.setVisibility(View.GONE);
+                        linearFourth.setVisibility(View.GONE);
+                        linearFifth.setVisibility(View.GONE);
                         imageMaterial.setVisibility(View.VISIBLE);
+
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.google_material)
+                                .resize(590, 150).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(imageMaterial);
+
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.adobe_flash)
+                                .resize(255, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image1);
+
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.lightroom)
+                                .resize(255, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image2);
+
+                        Picasso.with(container.getContext())
+                                .load(R.drawable.photoshop)
+                                .resize(255, 200).memoryPolicy(MemoryPolicy.NO_CACHE)
+                                .into(image3);
+
                         break;
                     case "Professional Skills":
-                        linearMultimedia.setVisibility(View.GONE);
-                        linearSystem.setVisibility(View.GONE);
-                        linearProfessional.setVisibility(View.VISIBLE);
-                        linearProfessional1.setVisibility(View.VISIBLE);
-                        linearProfessional2.setVisibility(View.VISIBLE);
-                        linearApp.setVisibility(View.GONE);
-                        linearApp1.setVisibility(View.GONE);
-                        linearApp2.setVisibility(View.GONE);
+                        linearFirst.setVisibility(View.GONE);
+                        linearSecond.setVisibility(View.GONE);
+                        linearThird.setVisibility(View.VISIBLE);
+                        linearThird1.setVisibility(View.VISIBLE);
+                        linearThird2.setVisibility(View.VISIBLE);
+                        linearFourth.setVisibility(View.GONE);
+                        linearFifth.setVisibility(View.GONE);
                         imageMaterial.setVisibility(View.GONE);
                         break;
                 }
