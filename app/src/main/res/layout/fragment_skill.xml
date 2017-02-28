@@ -56,15 +56,284 @@
 
                     <ScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp">
 
-                        <RelativeLayout
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/image_material"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:src="@drawable/google_material"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:id="@+id/linear_multimedia"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:visibility="gone"
+                                android:weightSum="3">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/adobe_flash" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:padding="1.5dp"
+                                    android:src="@drawable/lightroom" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:padding="1dp"
+                                    android:src="@drawable/photoshop" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_system_analysis"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:visibility="gone"
+                                android:weightSum="3">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:src="@drawable/project" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/office" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:src="@drawable/visio" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_professional"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="2">
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:gravity="start|center"
+                                    android:text="Attention to detail"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:gravity="start|center"
+                                    android:text="Analytical Thinking"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
 
 
+                            </LinearLayout>
 
-                        </RelativeLayout>
+                            <LinearLayout
+                                android:id="@+id/linear_professional1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="2">
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:gravity="start|center"
+                                    android:text="Self Control"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:gravity="start|center"
+                                    android:text="Innovative"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_professional2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="2">
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:gravity="start|center"
+                                    android:text="Stress Tolerance"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:gravity="start|center"
+                                    android:text="Leadership"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_app"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:visibility="gone"
+                                android:weightSum="4">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:src="@drawable/android_studio" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/github" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:src="@drawable/firebase" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/xamarin" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_app1"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:visibility="gone"
+                                android:weightSum="4">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:src="@drawable/jquery" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/mercurial" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:src="@drawable/phonegap" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:src="@drawable/visual_studio" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_app2"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:visibility="gone"
+                                android:weightSum="4">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:src="@drawable/windows" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/php_logo" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:src="@drawable/sqlite" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="10dp"
+                                    android:src="@drawable/fusetools" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
 
                     </ScrollView>
 

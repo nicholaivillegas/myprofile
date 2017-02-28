@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.PieChart;
@@ -31,24 +33,35 @@ public class SkillFragment extends Fragment {
 
     PieChart mChart;
     TextView textSkillTitle;
+    LinearLayout linearMultimedia, linearProfessional, linearProfessional1, linearProfessional2, linearSystem, linearApp,linearApp1,linearApp2;
+    ImageView imageMaterial;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_skill, container, false);
         mChart = (PieChart) view.findViewById(R.id.pie_chart);
+        imageMaterial = (ImageView) view.findViewById(R.id.image_material);
+        linearMultimedia = (LinearLayout) view.findViewById(R.id.linear_multimedia);
+        linearProfessional = (LinearLayout) view.findViewById(R.id.linear_professional);
+        linearProfessional1 = (LinearLayout) view.findViewById(R.id.linear_professional1);
+        linearProfessional2 = (LinearLayout) view.findViewById(R.id.linear_professional2);
+        linearSystem = (LinearLayout) view.findViewById(R.id.linear_system_analysis);
+        linearApp = (LinearLayout) view.findViewById(R.id.linear_app);
+        linearApp1 = (LinearLayout) view.findViewById(R.id.linear_app1);
+        linearApp2 = (LinearLayout) view.findViewById(R.id.linear_app2);
         textSkillTitle = (TextView) view.findViewById(R.id.text_skill_title);
+
         Description desc = new Description();
         desc.setText("");
 //        desc.setTextSize(20);
         mChart.setDescription(desc);
 
         final List<PieEntry> entries = new ArrayList<>();
-        entries.add(new PieEntry(10f, "Language", 0));
+        entries.add(new PieEntry(10f, "UI/UX Design", 0));
         entries.add(new PieEntry(10f, "App Development", 1));
         entries.add(new PieEntry(10f, "System Analysis", 2));
         entries.add(new PieEntry(10f, "Professional Skills", 3));
-        entries.add(new PieEntry(10f, "UI/UX Design", 4));
         PieDataSet dataset = new PieDataSet(entries, "");
         dataset.setColors(ColorTemplate.PASTEL_COLORS);
         dataset.setHighlightEnabled(true);
@@ -73,14 +86,48 @@ public class SkillFragment extends Fragment {
 
                 switch (label) {
                     case "App Development":
-                        break;
-                    case "Language":
+                        linearMultimedia.setVisibility(View.GONE);
+                        linearSystem.setVisibility(View.GONE);
+                        linearProfessional.setVisibility(View.GONE);
+                        linearProfessional1.setVisibility(View.GONE);
+                        linearProfessional2.setVisibility(View.GONE);
+                        linearApp.setVisibility(View.VISIBLE);
+                        linearApp1.setVisibility(View.VISIBLE);
+                        linearApp2.setVisibility(View.VISIBLE);
+                        imageMaterial.setVisibility(View.GONE);
                         break;
                     case "System Analysis":
+                        linearMultimedia.setVisibility(View.GONE);
+                        linearSystem.setVisibility(View.VISIBLE);
+                        linearProfessional.setVisibility(View.GONE);
+                        linearProfessional1.setVisibility(View.GONE);
+                        linearProfessional2.setVisibility(View.GONE);
+                        linearApp.setVisibility(View.GONE);
+                        linearApp1.setVisibility(View.GONE);
+                        linearApp2.setVisibility(View.GONE);
+                        imageMaterial.setVisibility(View.GONE);
                         break;
                     case "UI/UX Design":
+                        linearMultimedia.setVisibility(View.VISIBLE);
+                        linearSystem.setVisibility(View.GONE);
+                        linearProfessional.setVisibility(View.GONE);
+                        linearProfessional1.setVisibility(View.GONE);
+                        linearProfessional2.setVisibility(View.GONE);
+                        linearApp.setVisibility(View.GONE);
+                        linearApp1.setVisibility(View.GONE);
+                        linearApp2.setVisibility(View.GONE);
+                        imageMaterial.setVisibility(View.VISIBLE);
                         break;
                     case "Professional Skills":
+                        linearMultimedia.setVisibility(View.GONE);
+                        linearSystem.setVisibility(View.GONE);
+                        linearProfessional.setVisibility(View.VISIBLE);
+                        linearProfessional1.setVisibility(View.VISIBLE);
+                        linearProfessional2.setVisibility(View.VISIBLE);
+                        linearApp.setVisibility(View.GONE);
+                        linearApp1.setVisibility(View.GONE);
+                        linearApp2.setVisibility(View.GONE);
+                        imageMaterial.setVisibility(View.GONE);
                         break;
                 }
 
